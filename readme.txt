@@ -25,6 +25,9 @@ $rm readme.txt		删除工作区的readmen.txt
 $git rm readme.txt	$git commit -m "remove readme.txt"	删除版本库中的readme.txt
 
 $ssh-keygen -t rsa -C 18710805399@163.com 创建ssh的id_rsa.pub，文件内容复制到github中的SSH
+使用命令“ssh -T git@github.com”，如果出现
+You’ve successfully authenticated, but GitHub does not provide shell access 。
+这就表示已成功连上github
 
 $git remote add origin git@github.com:wojiaozhupengfei/My_LearnGit 将本地仓库与github的远程仓库关联，origin是远程库的默认名字（可以修改，一般不改）,关联wojiaozhupengfei这个github账户中的My_LearnGit这个远程仓库
 $git push -u origin master 	将本地仓库的所有内容推送到远程仓库(master分支推送到github)
