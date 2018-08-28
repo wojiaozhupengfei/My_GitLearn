@@ -1,41 +1,31 @@
-$mkdir learngit           	´´½¨learngitÎÄ¼ş¼Ğ
-$cd  learngit                            ×ªµ½learngitÎÄ¼ş¼ĞÄ¿Â¼
-$pwd 			ÏÔÊ¾µ±Ç°Ä¿Â¼
-$git init 			Ê¹µ±Ç°Ä¿Â¼ÊÜ¿Øgit£¬±äÎªgit¿ÉÒÔ¹ÜÀíµÄ²Ö¿â£¨´æÔÚ.gitÎÄ¼ş¼Ğ£©
+$mkdir learngit           	åˆ›å»ºlearngitæ–‡ä»¶å¤¹
+$cd  learngit                            è½¬åˆ°learngitæ–‡ä»¶å¤¹ç›®å½•
+$pwd 			æ˜¾ç¤ºå½“å‰ç›®å½•
+$git init 			ä½¿å½“å‰ç›®å½•å—æ§gitï¼Œå˜ä¸ºgitå¯ä»¥ç®¡ç†çš„ä»“åº“ï¼ˆå­˜åœ¨.gitæ–‡ä»¶å¤¹ï¼‰
 
-$git add readme.txt		½«readme.txtÎÄ¼şÌá½»µ½stage(Ôİ´æÇø)£¨²¢Ã»ÓĞÌá½»µ½²Ö¿âµÄ·ÖÖ§master£¬¸Ã·ÖÖ§ÓÉgit×Ô¶¯´´½¨£©
-$git commit -m ''xxxx''	½«stageÖĞµÄ¸Ä¶¯ÎÄ¼şÌá½»µ½²Ö¿â·ÖÖ§master£¬-mÊÇ±¾´Î¸Ä¶¯µÄËµÃ÷
-$git status 		²é¿´²Ö¿âµ±Ç°×´Ì¬
-$git diff 			²é¿´ÎÄ¼şĞŞ¸ÄÄÚÈİ
-$git diff HEAD -- readme.txt	²é¿´¹¤×÷ÇøºÍ°æ±¾¿âÀï×îĞÂ°æ±¾readme.txtµÄÇø±ğ
-
-___ ¹¤×÷Çø_____                            ___________°æ±¾¿â_____________________________________
-|	      |		    |        __stage________     HEAD-->____master____      |
-|                     |                             |        |                      |                   |  folder           |      |
-| readme.txt   |                             |        | readme.txt    |                   |  |_|                  |     |
-|                     |                             |        |                      |                   |   |____file        |      |
-|                     |-----git add-------|---> |                      |--commit->|   |____file        |      |
-|                     |                             |        |                      |                   |      |____file     |      |
-|                     |                             |        |_______________|                   |_______________|      |
-|______________|                             |______________________________________________________|
+$git add readme.txt		å°†readme.txtæ–‡ä»¶æäº¤åˆ°stage(æš‚å­˜åŒº)ï¼ˆå¹¶æ²¡æœ‰æäº¤åˆ°ä»“åº“çš„åˆ†æ”¯masterï¼Œè¯¥åˆ†æ”¯ç”±gitè‡ªåŠ¨åˆ›å»ºï¼‰
+$git commit -m ''xxxx''	å°†stageä¸­çš„æ”¹åŠ¨æ–‡ä»¶æäº¤åˆ°ä»“åº“åˆ†æ”¯masterï¼Œ-mæ˜¯æœ¬æ¬¡æ”¹åŠ¨çš„è¯´æ˜
+$git status 		æŸ¥çœ‹ä»“åº“å½“å‰çŠ¶æ€
+$git diff 			æŸ¥çœ‹æ–‡ä»¶ä¿®æ”¹å†…å®¹
+$git diff HEAD -- readme.txt	æŸ¥çœ‹å·¥ä½œåŒºå’Œç‰ˆæœ¬åº“é‡Œæœ€æ–°ç‰ˆæœ¬readme.txtçš„åŒºåˆ«
                                                       
-$git log			²é¿´Ìá½»ÈÕÖ¾
-$git log --pretty=oneline	ĞĞÏÔÊ¾ÈÕÖ¾
-$git reflog		²é¿´ÀúÊ·ÈÕÖ¾
-$git reset --hard HEAD^	»ØÍËµ½ÉÏÒ»°æ±¾
-$git reset --hard HEAD^^	»ØÍËµ½ÉÏÉÏÒ»°æ±¾
-$git reset --hard HEAD~100 	»ØÍËµ½Ç°100¸ö°æ±¾
-$git reset --hard 1094a	»ØÍËµ½1094a°æ±¾
+$git log			æŸ¥çœ‹æäº¤æ—¥å¿—
+$git log --pretty=oneline	è¡Œæ˜¾ç¤ºæ—¥å¿—
+$git reflog		æŸ¥çœ‹å†å²æ—¥å¿—
+$git reset --hard HEAD^	å›é€€åˆ°ä¸Šä¸€ç‰ˆæœ¬
+$git reset --hard HEAD^^	å›é€€åˆ°ä¸Šä¸Šä¸€ç‰ˆæœ¬
+$git reset --hard HEAD~100 	å›é€€åˆ°å‰100ä¸ªç‰ˆæœ¬
+$git reset --hard 1094a	å›é€€åˆ°1094aç‰ˆæœ¬
 
-$cat readme.txt		²é¿´readme.txtÄÚÈİ
-$git checkout -- readme.txt	³·Ïú¹¤×÷ÇøÖĞreadme.txtÎÄ¼şµÄĞŞ¸Ä,ÆäÊµ¾ÍÊÇÓÃ°æ±¾¿âµÄÌæ»»¹¤×÷ÇøµÄ
-$git reset HEAD readme.txt	½«Ôİ´æÇøreadme.txtµÄĞŞ¸Ä³·Ïúµô
+$cat readme.txt		æŸ¥çœ‹readme.txtå†…å®¹
+$git checkout -- readme.txt	æ’¤é”€å·¥ä½œåŒºä¸­readme.txtæ–‡ä»¶çš„ä¿®æ”¹,å…¶å®å°±æ˜¯ç”¨ç‰ˆæœ¬åº“çš„æ›¿æ¢å·¥ä½œåŒºçš„
+$git reset HEAD readme.txt	å°†æš‚å­˜åŒºreadme.txtçš„ä¿®æ”¹æ’¤é”€æ‰
 
-$rm readme.txt		É¾³ı¹¤×÷ÇøµÄreadmen.txt
-$git rm readme.txt	$git commit -m "remove readme.txt"	É¾³ı°æ±¾¿âÖĞµÄreadme.txt
+$rm readme.txt		åˆ é™¤å·¥ä½œåŒºçš„readmen.txt
+$git rm readme.txt	$git commit -m "remove readme.txt"	åˆ é™¤ç‰ˆæœ¬åº“ä¸­çš„readme.txt
 
-$git remote add origin git@github.com:wojiaozhupengfei/My_LearnGit ½«±¾µØ²Ö¿âÓëgithubµÄÔ¶³Ì²Ö¿â¹ØÁª£¬originÊÇÔ¶³Ì¿âµÄÄ¬ÈÏÃû×Ö£¨¿ÉÒÔĞŞ¸Ä£¬Ò»°ã²»¸Ä£©,¹ØÁªwojiaozhupengfeiÕâ¸ögithubÕË»§ÖĞµÄMy_LearnGitÕâ¸öÔ¶³Ì²Ö¿â
-$git push -u origin master 	½«±¾µØ²Ö¿âµÄËùÓĞÄÚÈİÍÆËÍµ½Ô¶³Ì²Ö¿â(master·ÖÖ§ÍÆËÍµ½github)
+$git remote add origin git@github.com:wojiaozhupengfei/My_LearnGit å°†æœ¬åœ°ä»“åº“ä¸githubçš„è¿œç¨‹ä»“åº“å…³è”ï¼Œoriginæ˜¯è¿œç¨‹åº“çš„é»˜è®¤åå­—ï¼ˆå¯ä»¥ä¿®æ”¹ï¼Œä¸€èˆ¬ä¸æ”¹ï¼‰,å…³è”wojiaozhupengfeiè¿™ä¸ªgithubè´¦æˆ·ä¸­çš„My_LearnGitè¿™ä¸ªè¿œç¨‹ä»“åº“
+$git push -u origin master 	å°†æœ¬åœ°ä»“åº“çš„æ‰€æœ‰å†…å®¹æ¨é€åˆ°è¿œç¨‹ä»“åº“(masteråˆ†æ”¯æ¨é€åˆ°github)
 
 
 
