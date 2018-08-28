@@ -31,6 +31,6 @@ You’ve successfully authenticated, but GitHub does not provide shell access �
 
 $git remote add origin git@github.com:wojiaozhupengfei/My_LearnGit 将本地仓库与github的远程仓库关联，origin是远程库的默认名字（可以修改，一般不改）,关联wojiaozhupengfei这个github账户中的My_LearnGit这个远程仓库
 $git push -u origin master 	将本地仓库的所有内容推送到远程仓库(master分支推送到github)
-
+$ git clone git@github.com:michaelliao/gitskills.git   将远程仓库克隆到本地
 
 
